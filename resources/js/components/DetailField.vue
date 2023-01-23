@@ -1,7 +1,7 @@
 <template>
   <PanelItem :field="field">
     <template #value>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
         <div v-for="(permissions, group) in field.options" :key="group">
           <h1 class='font-normal mb-1 mt-2'>
             {{ __(group) }}
