@@ -6,7 +6,7 @@
     :full-width-content="fullWidthContent"
   >
     <template #field>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
         <div v-for="(permissions, group) in field.options" :key="group" class="mb-4">
           <h1 class="font-normal mb-3 my-2">
             <checkbox :checked="isGroupChecked(group)" @click="toggleGroup(group)"/>
