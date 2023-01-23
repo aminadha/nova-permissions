@@ -1,12 +1,12 @@
 <template>
   <PanelItem :field="field">
     <template #value>
-      <div class="grid gap-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div v-for="(permissions, group) in field.options" :key="group">
-          <h1 class='font-normal text-lg mb-1 mt-2'>
+          <h1 class='font-normal mb-1 mt-2'>
             {{ __(group) }}
           </h1>
-          <div class="grid grid-cols-4 gap-4">
+          <div class="grid gap-4">
             <div v-for="(permission, option) in permissions" :key="option">
               <Icon
                 viewBox="0 0 24 24"
